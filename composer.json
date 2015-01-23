@@ -1,0 +1,86 @@
+{
+	"name"        : "cloudcultures/ccwp",
+	"type"        : "project",
+	"license"     : "MIT",
+	"description" : "CCWP - Auto Bootstrap: WordPress stack via Composer",
+	"homepage"    : "https://bitbucket.org/cloudcultures/ccwp",
+	"authors"     : [
+		{
+			"name"    : "CloudCultures",
+			"email"   : "info@cloudcultures.com",
+			"homepage": "http://cloudcultures.com/"
+		}
+	],
+	"minimum-stability": "dev",
+	"config"      : {
+		"vendor-dir":  "vendor"
+	},
+	"repositories": [
+		{
+			"type": "composer",
+			"url" : "http://wpackagist.org"
+		},
+		{
+          "type": "composer",
+          "url": "http://languages.koodimonni.fi"
+        },
+		{
+			"type": "package",
+			"package": {
+				"name": "julianlmedina/modernscores",
+				"type": "wordpress-theme",
+				"version": "1.0",
+				"dist": {
+					"type": "zip",
+					"url": "https://github.com/julianlmedina/Modernscores/archive/master.zip"
+				}
+			}
+		},
+		{
+			"type": "package",
+			"package": {
+				"name": "Custom-Meta-Boxes",
+				"type": "wordpress-muplugin",
+				"version": "1.0.1",
+				"dist": {
+					"type": "zip",
+					"url": "https://github.com/humanmade/Custom-Meta-Boxes/archive/master.zip"
+				}
+			}
+		}
+	],
+	"require"     : {
+	    "php": ">=5.4",
+		
+		"johnpbloch/wordpress"                                      : "4.*",
+		"composer/installers"                         	    	   	: "v1.0.19",
+		
+		"koodimonni-language/core-de_de"             			    : "*",
+		"koodimonni/composer-dropin-installer"					    : "*",
+		
+		"julianlmedina/modernscores"                 			    : "*",
+		
+		"wpackagist-plugin/advanced-custom-fields"    				: "*",
+		"wpackagist-plugin/ambrosite-nextprevious-post-link-plus" 	: "*",
+		"wpackagist-plugin/posts-to-posts"                          : "*",
+		"wpackagist-plugin/adminimize"                              : "*",
+		"Custom-Meta-Boxes"                           				: "*"
+		
+	},
+	"require-dev" : {
+		"wpackagist-plugin/log-deprecated-notices"    : "*"
+	},
+	"extra"       : {
+		"installer-paths": {
+			"web/apps/mu-plugins/{$name}/" : ["type:wordpress-muplugin","wpackagist-plugin/adminimize"],
+			"web/apps/plugins/{$name}/" : ["type:wordpress-plugin"],
+			"web/apps/themes/{$name}/"  : ["type:wordpress-theme"]
+		},
+		"dropin-paths": {
+			"web/apps/languages/": ["type:wordpress-language"],
+			"web/apps/languages/plugins/": ["type:wordpress-plugin-language"],
+			"web/apps/languages/themes/": ["type:wordpress-theme-language"]
+		},
+		"wordpress-install-dir": "web/core"
+	}
+}
