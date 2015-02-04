@@ -1,14 +1,20 @@
 vendor
 
 web/core
+
 web/apps/languages/*
+
 web/apps/themes/*
 !web/apps/themes/modernscores
+
 web/apps/plugins/*
+
 web/apps/mu-plugins/*
 !web/apps/mu-plugins/register-theme-directory.php
 !web/apps/mu-plugins/bedrock-autoloader.php
 !web/apps/mu-plugins/custom-functions
 
-config/local-config.php
+config/*
+!config/sample-config.php
+
 .htaccess
