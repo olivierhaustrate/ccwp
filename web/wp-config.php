@@ -80,7 +80,7 @@ define( 'UPLOADS', '/uploads' );
 // Increase PHP memory limit
 define('WP_MEMORY_LIMIT', '64M');
 // Modify AutoSave Interval (default is 60 seconds) 
-define('AUTOSAVE_INTERVAL', 160 );
+define('AUTOSAVE_INTERVAL', 180 );
 // Limit post revision history 
 define('WP_POST_REVISIONS', 3);
 // Empty trash more frequently (30 day default) 
@@ -91,6 +91,10 @@ define('MEDIA_TRASH', true);
 define('DISALLOW_FILE_EDIT', true);
 // Disable plugin and theme update and installation 
 define('DISALLOW_FILE_MODS',true);
+// Disable all automatic updates for minor releases
+define( 'AUTOMATIC_UPDATER_DISABLED', false );
+// Disable all automatic updates for major releases
+define( 'WP_AUTO_UPDATE_CORE', false );
 // Set cookie domain - The domain set in the cookies for WordPress can be specified for those with unusual domain setups. One reason is if subdomains are used to serve static content. To prevent WordPress cookies from being sent with each request to static content on your subdomain you can set the cookie domain to the non-static domain only. 
 # define('COOKIE_DOMAIN', 'www.example.com');
 // ======================================
