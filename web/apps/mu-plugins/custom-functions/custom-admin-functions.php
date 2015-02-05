@@ -84,7 +84,7 @@ function remove_dashboard_meta() {
         remove_meta_box( 'dashboard_recent_comments', 'dashboard', 'normal' );
         remove_meta_box( 'dashboard_right_now', 'dashboard', 'normal' );
         remove_meta_box( 'dashboard_activity', 'dashboard', 'normal');
-		    remove_meta_box( 'dashboard_welcome_panel', 'dashboard', 'normal' );
+		    remove_action('welcome_panel', 'wp_welcome_panel');
 }
 add_action( 'admin_init', 'remove_dashboard_meta' );
 
