@@ -2,6 +2,8 @@ vendor
 
 web/core
 
+web/uploads
+
 web/apps/languages/*
 
 web/apps/themes/*
