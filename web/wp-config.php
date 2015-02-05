@@ -2,7 +2,7 @@
 // ================================================================
 // Define server environment based on which config file is in place
 // ================================================================
-define( 'DB_CREDENTIALS_PATH', dirname( ABSPATH ) . '/config' ); // cache it for multiple use
+define( 'DB_CREDENTIALS_PATH', dirname(__DIR__) . '/config' ); // cache it for multiple use
 define( 'WP_LOCAL_SERVER', file_exists( DB_CREDENTIALS_PATH . '/local-config.php' ) );
 define( 'WP_DEV_SERVER', file_exists( DB_CREDENTIALS_PATH . '/dev-config.php' ) );
 define( 'WP_STAGING_SERVER', file_exists( DB_CREDENTIALS_PATH . '/staging-config.php' ) );
