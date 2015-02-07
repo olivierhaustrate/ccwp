@@ -2,7 +2,7 @@
 	"name"        : "cloudcultures/ccwp",
 	"type"        : "project",
 	"license"     : "MIT",
-	"description" : "CCWP - Auto Bootstrap: WordPress stack via Composer",
+	"description" : "CCWP - Skeleton for quick scaffolding of a WordPress site. Uses Composer to manage all WP dependencies and comes with a simple multi env wp-config structure.",
 	"homepage"    : "https://bitbucket.org/cloudcultures/ccwp",
 	"authors"     : [
 		{
@@ -35,18 +35,6 @@
 					"url": "https://github.com/julianlmedina/Modernscores/archive/master.zip"
 				}
 			}
-		},
-		{
-			"type": "package",
-			"package": {
-				"name": "Custom-Meta-Boxes",
-				"type": "wordpress-muplugin",
-				"version": "1.0.1",
-				"dist": {
-					"type": "zip",
-					"url": "https://github.com/humanmade/Custom-Meta-Boxes/archive/master.zip"
-				}
-			}
 		}
 	],
 	"require"     : {
@@ -55,25 +43,14 @@
 		"johnpbloch/wordpress"                                      : "4.*",
 		"composer/installers"                         	    	   	: "v1.0.19",
 		
-		"koodimonni-language/core-de_de"             			    : "*",
 		"koodimonni/composer-dropin-installer"					    : "*",
 		"roots/wp-h5bp-htaccess"									: "1.1.0",
 				
-		"julianlmedina/modernscores"                 			    : "*",
-		
-		"wpackagist-plugin/advanced-custom-fields"    				: "*",
-		"wpackagist-plugin/ambrosite-nextprevious-post-link-plus" 	: "*",
-		"wpackagist-plugin/posts-to-posts"                          : "*",
-		"wpackagist-plugin/adminimize"                              : "*",
-		"Custom-Meta-Boxes"                           				: "*"
-		
-	},
-	"require-dev" : {
-		"wpackagist-plugin/log-deprecated-notices"    : "*"
+		"julianlmedina/modernscores"                 			    : "*"		
 	},
 	"extra"       : {
 		"installer-paths": {
-			"web/apps/mu-plugins/{$name}/" : ["type:wordpress-muplugin","wpackagist-plugin/adminimize","roots/wp-h5bp-htaccess"],
+			"web/apps/mu-plugins/{$name}/" : ["type:wordpress-muplugin","roots/wp-h5bp-htaccess"],
 			"web/apps/plugins/{$name}/" : ["type:wordpress-plugin"],
 			"web/apps/themes/{$name}/"  : ["type:wordpress-theme"]
 		},
