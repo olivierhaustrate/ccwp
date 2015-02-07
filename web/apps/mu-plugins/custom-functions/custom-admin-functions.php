@@ -1,8 +1,8 @@
 <?php
 /*
-Plugin Name: custom-dashboard-functions
+Plugin Name: custom-admin-functions
 Plugin URI:
-Description: custom dashboard functions
+Description: custom admin functions
 Version: 0.1
 Author: olivier haustrate
 Author Email: olivier.haustrate@hotmail.com
@@ -87,14 +87,5 @@ function remove_dashboard_meta() {
 		    remove_action('welcome_panel', 'wp_welcome_panel');
 }
 add_action( 'admin_init', 'remove_dashboard_meta' );
-
-
-// ====================================
-// Start project specific customization
-// ====================================
-
-// Set default timezone
-// ====================
-date_default_timezone_set('Europe/Berlin');
 
 ?>
