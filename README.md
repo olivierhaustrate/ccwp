@@ -1,5 +1,5 @@
-WordPress Skeleton
-==================
+CCWP
+====
 
 This is a simple skeleton for quick scaffolding of a WordPress site.
 It uses Composer to manage all WP dependencies and comes with a simple multi env wp-config structure. 
