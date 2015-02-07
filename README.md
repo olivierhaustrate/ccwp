@@ -1,5 +1,5 @@
-CCWP
-====
+WordPress Skeleton
+==================
 
 This is a simple skeleton for quick scaffolding of a WordPress site.
 It uses Composer to manage all WP dependencies and comes with a simple multi env wp-config structure. 
@@ -52,3 +52,8 @@ WordPress Must Use (MU) plugins
 > WordPress Must Use (MU) plugins – by default – must be in the root of the mu-plugins directory. This means that, without any modification, any composer package that is installed into the mu-plugins directory simply won’t work. 
 
 To solve the problem, we've borrowed the **Bedrock Autoloader from *Roots*** : https://github.com/roots/bedrock/ (see `/web/apps/mu-plugins/bedrock-autoloader.php`).
+
+
+----------
+
+We've packed in mu-plugins a **custom admin functions** file to help you start customizing WordPress to your needs. (see `/web/apps/mu-plugins/custom-functions/custom-admin-functions.php`).
