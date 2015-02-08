@@ -1,5 +1,5 @@
-WordPress Skeleton
-==================
+CCWP
+=====
 
 This is a simple skeleton for quick scaffolding of a WordPress site.
 It uses Composer to manage all WP dependencies and comes with a simple multi env wp-config structure. 
@@ -13,6 +13,30 @@ Installation
  4. Create a `local-config.php` in `/config` with your DB details 
  5. Visit your new install in your browser in order to complete WordPress' installation
  6. That's it, you're done
+
+Folders/files structure
+----------------
+
+    Site
+    	|__ config
+	    | |__ local-config.php
+    	|__ vendor
+    	|__ web
+    	| |__ apps
+    	| | |__ languages
+    	| | |__ plugins
+    	| | |__ mu-plugins
+    	| | |__ themes
+    	| |__ core
+    	| |__ medias
+    	| |__ wp-config.php
+    	|__ .gitignore
+    	|__ .htaccess
+    	|__ composer.json
+    	|__ composer.lock
+    	|__ index.php
+    	|__ README.md
+
 
 Composer.json
 -------------
