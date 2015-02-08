@@ -68,7 +68,7 @@ define( 'WP_CONTENT_URL', 'http://' . $_SERVER['HTTP_HOST'] . '/apps' );
 // ==========================
 // Move the uploads directory
 // ==========================
-define( 'UPLOADS', dirname( __FILE__ ) . '/uploads' );
+define( 'UPLOADS', '' . '../medias' );
 // =============================
 // Manually define site location
 // =============================
