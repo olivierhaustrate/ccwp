@@ -16,6 +16,8 @@ web/apps/mu-plugins/*
 !web/apps/mu-plugins/bedrock-autoloader.php
 !web/apps/mu-plugins/custom-functions
 
+medias
+
 config/*
 !config/sample-config.php
 
