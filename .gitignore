@@ -7,7 +7,6 @@ web/uploads
 web/apps/languages/*
 
 web/apps/themes/*
-!web/apps/themes/modernscores
 
 web/apps/plugins/*
 
@@ -22,4 +21,3 @@ config/*
 !config/sample-config.php
 
 .htaccess
-/.htaccess
